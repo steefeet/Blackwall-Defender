@@ -1,0 +1,42 @@
+BLACKWALL DEFENDER - first working version
+
+START
+Extract the whole folder, then double-click Start-Blackwall-Defender.cmd.
+Click Scan this PC. Most checks work without administrator access.
+Use Dark mode / Light mode in the top bar to switch themes. Your choice is remembered.
+Recent changes are shown with newest dates at the top, including apps and hotfixes together.
+If a check is unavailable, the Coverage and limits tab explains it.
+To use administrator access, right-click Start-Blackwall-Defender.cmd and choose Run as administrator.
+Keep all three program files together. For desktop access, create a shortcut to the launcher.
+
+WHAT IT DOES
+- Reads up to 500 recent errors and critical events from the Windows System log.
+- Shows explanations, suggested next steps, and the original log evidence.
+- Reads basic system-drive and physical-drive health and free space.
+- Lists recent hotfixes and available app install/update dates.
+- Shows historical corruption/repair clues from the current CBS log.
+- Compares events with your last scan and exports a JSON report.
+
+BOUNDARIES
+This is not a malware scan or a complete hardware diagnostic.
+It does not run SFC, repair Windows, delete files, or change settings.
+Old corruption entries do not prove that corruption remains today.
+No matching entries do not prove that protected system files are intact.
+Recorded changes are partial and do not establish the cause of a failure.
+Drive status is basic and does not replace a SMART or manufacturer diagnostic.
+App, security, and other event logs are outside this version's scope.
+No background monitoring, automatic fixes, temperature sensors, or deletion tracking are included.
+
+PRIVACY AND STORAGE
+No network calls, cloud service, account, or uploads are used by the app.
+The latest report is saved in %LOCALAPPDATA%\PCPulse\last-scan.json.
+Reports contain the PC name and event details, which may contain personal information.
+Review reports before sharing. Delete the PCPulse folder in Local AppData to clear the baseline.
+
+REQUIREMENTS
+Windows 11 or Windows 10, Windows PowerShell 5.1, and the built-in WPF desktop framework.
+This unsigned prototype uses a process-only PowerShell execution-policy override.
+It does not change the computer's saved execution policy. Organizational restrictions may still block it.
+
+Source files are included and readable. No installation is required.
+
